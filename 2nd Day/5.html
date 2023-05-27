@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline CSS Example</title>
+    <style type="text/css">
+        ul {
+            list-style: none;
+        }
+        li:before {
+            content: "•";
+            color: black;
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        li ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        li li:before {
+            content: "";
+            border: 1px solid black;
+            border-radius: 50%;
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Main bullet point 1
+            <ul>
+                <li>Sub bullet point 1</li>
+                <li>Sub bullet point 2</li>
+            </ul>
+        </li>
+        <li>Main bullet point 2
+            <ul>
+                <li>Sub bullet point 1</li>
+                <li>Sub bullet point 2</li>
+            </ul>
+        </li>
+        <li>Main bullet point 3
+            <ul>
+                <li>Sub bullet point 1</li>
+                <li>Sub bullet point 2</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

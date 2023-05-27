@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date and Time</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Date and Time</h1>
+    <button onclick="showDate()">Show Date</button>
+    <button onclick="showTime()">Show Time</button>
+    <br><br>
+    <p id="result"></p>
+
+    <script>
+        function showDate() {
+            var today = new Date();
+            var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+            document.getElementById("result").innerHTML = "Current Date: " + date;
+        }
+
+        function showTime() {
+            var today = new Date();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            document.getElementById("result").innerHTML = "Current Time: " + time;
+        }
+    </script>
+</body>
+</html>

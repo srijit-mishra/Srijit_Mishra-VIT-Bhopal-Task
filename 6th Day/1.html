@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Program</title>
+  </head>
+  <body>
+    <h1>Multiplication and Division Calculator</h1>
+    <p>Enter two numbers:</p>
+    <input type="text" id="num1"> 
+    <input type="text" id="num2"> 
+    <br><br>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <p id="result"></p>
+    
+    <script>
+      function multiply() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        
+        var result = num1 * num2;
+        
+        document.getElementById("result").innerHTML = "Multiplication: " + result;
+      }
+      
+      function divide() {
+        var num1 = parseFloat(document.getElementById("num1").value);
+        var num2 = parseFloat(document.getElementById("num2").value);
+        
+        var result = num1 / num2;
+        
+        document.getElementById("result").innerHTML = "Division: " + result;
+      }
+    </script>
+  </body>
+</html>

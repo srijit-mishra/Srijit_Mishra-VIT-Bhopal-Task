@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline CSS Example</title>
+    <style type="text/css">
+        .navbar {
+            display: inline-block;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar li {
+            background-color: lightblue;
+            margin-bottom: 5px;
+            padding: 5px;
+            color: darkblue;
+        }
+        .navbar li:first-child {
+            background-color: yellow;
+        }
+      
+        .navbar-horizontal {
+            float: right;
+            margin-top: 10px;
+        }
+        .navbar-horizontal ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+        .navbar-horizontal li {
+            background-color: grey;
+            margin-left: 5px;
+            padding: 5px;
+            color: darkblue;
+        }
+        .navbar-horizontal li:first-child {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>Java</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Bootstrap</li>
+        </ul>
+    </div>
+    <div class="navbar-horizontal">
+        <ul>
+            <li style="background-color: black; color: white;">Home</li>
+            <li>Java</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline CSS Example</title>
+    <style type="text/css">
+        .shape {
+            display: inline-block;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            border: 5px solid green;
+        }
+        .square {
+            border-radius: 0;
+        }
+        .circle {
+            border-radius: 50%;
+        }
+        .rectangle {
+            border-radius: 10px;
+        }
+        .rectangle2 {
+            border-radius: 40px;
+        }
+        .rectangle3 {
+            border-radius: 70px;
+        }
+        .rectangle4 {
+            border-radius: 90px;
+        }
+        .rectangle5 {
+            border-radius: 5px;
+        }
+        .rectangle6 {
+            border-radius: 70px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="shape square"></div>
+        <div class="shape circle"></div>
+        <div class="shape rectangle"></div>
+    </div>
+    <div class="row">
+        <div class="shape rectangle2"></div>
+        <div class="shape rectangle3"></div>
+        <div class="shape rectangle4"></div>
+    </div>
+    <div class="row">
+        <div class="shape rectangle5"></div>
+        <div class="shape rectangle6"></div>
+        <div class="shape rectangle"></div>
+    </div>
+</body>
+</html>

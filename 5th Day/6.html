@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alphabetical Order</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Alphabetical Order</h1>
+    <input type="text" id="input" placeholder="Enter a string">
+    <button onclick="order()">Order</button>
+    <br><br>
+    <p id="result"></p>
+
+    <script>
+        function order() {
+            var input = document.getElementById("input").value;
+            var ordered = input.split('').sort().join('');
+            document.getElementById("result").innerHTML = "Alphabetically Ordered: " + ordered;
+        }
+    </script>
+</body>
+</html>
